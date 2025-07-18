@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Store - Premium Tech Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Dynamic Particle Background -->
+    <div class="particle-container" id="particles"></div>
+
+    <!-- Live Scenery Background -->
+    <div class="scenery-background">
+        <div class="animated-bg layer1"></div>
+        <div class="animated-bg layer2"></div>
+        <div class="animated-bg layer3"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="float-element float-1"></div>
+        <div class="float-element float-2"></div>
+        <div class="float-element float-3"></div>
+        <div class="float-element float-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechGadget</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text reveal-text">
+                <h1 class="hero-title">
+                    <span class="text-reveal">Premium</span>
+                    <span class="text-reveal">Tech</span>
+                    <span class="text-reveal">Experience</span>
+                </h1>
+                <p class="hero-subtitle text-reveal">
+                    Discover cutting-edge gadgets that redefine your digital lifestyle
+                </p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="cta-button magnetic-btn neumorphic">
+                        <span class="btn-text">Shop Now</span>
+                        <div class="btn-hover-text">Explore Collection</div>
+                    </a>
+                    <button class="secondary-btn magnetic-btn glass-effect">
+                        <span class="btn-text">Watch Demo</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="product-card glass-effect neumorphic transform-3d">
+                        <div class="product-image">
+                            <img src="https://avstore.in/cdn/shop/products/1_26a4ab32-ec17-49a3-a294-3e9ad4c57d80.jpg?v=1632151642?w=400&h=400&fit=crop" alt="Premium Headphones">
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Headphones</h3>
+                            <p>$299.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title text-reveal">Why Choose TechGadget?</h2>
+            <div class="features-grid">
+                <div class="feature-card glass-effect neumorphic hover-reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast Delivery</h3>
+                        <p class="hidden-text">Get your gadgets delivered within 24 hours</p>
+                    </div>
+                </div>
+                <div class="feature-card glass-effect neumorphic hover-reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Premium Quality</h3>
+                        <p class="hidden-text">Only the finest tech products make it to our store</p>
+                    </div>
+                </div>
+                <div class="feature-card glass-effect neumorphic hover-reveal">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>24/7 Support</h3>
+                        <p class="hidden-text">Expert tech support whenever you need it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title text-reveal">Featured Products</h2>
+            <div class="products-grid">
+                <!-- Featured Product 1 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="smartphones">
+                    <div class="product-image">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-10/02/full/1696225756-5527.jpg?w=400&h=300&fit=crop" alt="iPhone 15 Pro Max">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>iPhone 15 Pro Max</h3>
+                        <p class="product-price">$1,199.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 2 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="accessories">
+                    <div class="product-image">
+                        <img src="https://www.apple.com/newsroom/images/2023/09/apple-unveils-apple-watch-ultra-2/tile/Apple-Watch-Ultra-2-hero-230912.jpg.news_app_ed.jpg?w=400&h=300&fit=crop" alt="Apple Watch Ultra 2">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Apple Watch Ultra 2</h3>
+                        <p class="product-price">$799.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 3 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://www.apple.com/v/airpods-pro/m/images/meta/og__eui2mpgzwyaa_overview.png?w=400&h=300&fit=crop" alt="AirPods Pro 2">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>AirPods Pro 2</h3>
+                        <p class="product-price">$249.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 4 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="computing">
+                    <div class="product-image">
+                        <img src="https://www.apple.com/newsroom/images/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/article/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.large.jpg?w=400&h=300&fit=crop" alt="MacBook Pro M3">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>MacBook Pro M3</h3>
+                        <p class="product-price">$1,999.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 5 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="gaming">
+                    <div class="product-image">
+                        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25615694/ps5pronew.jpg?quality=90&strip=all&crop=0,0.45045045045045,100,99.099099099099?w=400&h=300&fit=crop" alt="PlayStation 5">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>PlayStation 5</h3>
+                        <p class="product-price">$499.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 6 -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://www.soundguys.com/wp-content/uploads/2023/10/Sony-WXM5-Headphones-Featured-Image-1-scaled.jpg?w=400&h=300&fit=crop" alt="Sony WH-1000XM5">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Sony WH-1000XM5</h3>
+                        <p class="product-price">$399.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View All Products Button -->
+            <div class="view-all-products" style="text-align: center; margin-top: 40px;">
+                <a href="products.html" class="view-all-btn magnetic-btn neumorphic">
+                    <span>View All Products</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content glass-effect neumorphic">
+                <h2 class="text-reveal">Stay Updated</h2>
+                <p class="text-reveal">Get the latest tech news and exclusive deals</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="email-input glass-effect">
+                    <button class="subscribe-btn magnetic-btn neumorphic">
+                        <span>Subscribe</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechGadget</h3>
+                    <p>Premium tech gadgets for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechGadget Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

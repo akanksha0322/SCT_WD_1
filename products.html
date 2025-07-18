@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechGadget Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dynamic Particle Background -->
+    <div class="particle-container" id="particles"></div>
+
+    <!-- Live Scenery Background -->
+    <div class="scenery-background">
+        <div class="animated-bg layer1"></div>
+        <div class="animated-bg layer2"></div>
+        <div class="animated-bg layer3"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="float-element float-1"></div>
+        <div class="float-element float-2"></div>
+        <div class="float-element float-3"></div>
+        <div class="float-element float-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechGadget</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title text-reveal">
+                    <span class="text-reveal">Our</span>
+                    <span class="text-reveal">Products</span>
+                </h1>
+                <p class="hero-subtitle text-reveal">
+                    Discover the latest and greatest in technology
+                </p>
+                
+                <!-- Search and Filter Bar -->
+                <div class="search-filter-bar glass-effect neumorphic">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="filter-options">
+                        <select class="filter-select glass-effect">
+                            <option value="all">All Categories</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="audio">Audio</option>
+                            <option value="computing">Computing</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                        <select class="filter-select glass-effect">
+                            <option value="all">All Prices</option>
+                            <option value="under-100">Under $100</option>
+                            <option value="100-500">$100 - $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="over-1000">Over $1000</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products Section -->
+    <section class="all-products-section">
+        <div class="container">
+            <!-- Product Categories -->
+            <div class="product-categories">
+                <div class="category-tabs">
+                    <button class="category-btn active" data-category="all">All Products</button>
+                    <button class="category-btn" data-category="smartphones">Smartphones</button>
+                    <button class="category-btn" data-category="audio">Audio</button>
+                    <button class="category-btn" data-category="computing">Computing</button>
+                    <button class="category-btn" data-category="gaming">Gaming</button>
+                    <button class="category-btn" data-category="accessories">Accessories</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Smartphones -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="smartphones">
+                    <div class="product-image">
+                        <img src="https://istore.co.na/cdn/shop/files/iPhone_15_Pro_Max_Natural_Titanium_PDP_Image_Position-8__WWEN_2048x.jpg?v=1696938296?w=400&h=300&fit=crop" alt="iPhone 15 Pro Max">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>iPhone 15 Pro Max</h3>
+                        <p class="product-description">Latest iPhone with A17 Pro chip and titanium design</p>
+                        <p class="product-price">$1,199.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="smartphones">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop" alt="Samsung Galaxy S24 Ultra">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Samsung Galaxy S24 Ultra</h3>
+                        <p class="product-description">Flagship Android with S Pen and 200MP camera</p>
+                        <p class="product-price">$1,099.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="smartphones">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&h=300&fit=crop" alt="Google Pixel 8 Pro">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Google Pixel 8 Pro</h3>
+                        <p class="product-description">Google's flagship with advanced AI photography</p>
+                        <p class="product-price">$999.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.6)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Products -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" alt="AirPods Pro 2">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>AirPods Pro 2</h3>
+                        <p class="product-description">Active noise cancellation with spatial audio</p>
+                        <p class="product-price">$249.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.9)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&h=300&fit=crop" alt="Sony WH-1000XM5">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Sony WH-1000XM5</h3>
+                        <p class="product-description">Industry-leading noise canceling headphones</p>
+                        <p class="product-price">$399.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558756520-22cfe5d382ca?w=400&h=300&fit=crop" alt="JBL Charge 5">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>JBL Charge 5</h3>
+                        <p class="product-description">Portable Bluetooth speaker with powerbank</p>
+                        <p class="product-price">$179.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computing Products -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="computing">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWqMsLG6Q-4dCoUGyBCwFs3jM-TmCjsJV3aQ&s?w=400&h=300&fit=crop" alt="MacBook Pro M3">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>MacBook Pro M3</h3>
+                        <p class="product-description">Apple's most powerful laptop with M3 chip</p>
+                        <p class="product-price">$1,999.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.9)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="computing">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=300&fit=crop" alt="Gaming PC RTX 4080">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Gaming PC RTX 4080</h3>
+                        <p class="product-description">High-performance gaming desktop with RTX 4080</p>
+                        <p class="product-price">$2,499.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="computing">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/618Yg6X-v2L.jpg?w=400&h=300&fit=crop" alt="iPad Pro 12.9">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>iPad Pro 12.9"</h3>
+                        <p class="product-description">Professional tablet with M2 chip and Liquid Retina display</p>
+                        <p class="product-price">$1,099.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaming Products -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="gaming">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=300&fit=crop" alt="PlayStation 5">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>PlayStation 5</h3>
+                        <p class="product-description">Next-gen gaming console with 4K gaming</p>
+                        <p class="product-price">$499.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="gaming">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=300&fit=crop" alt="Xbox Elite Controller">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Xbox Elite Controller</h3>
+                        <p class="product-description">Professional gaming controller with customizable features</p>
+                        <p class="product-price">$179.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.6)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="accessories">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn_4k6cSbdCEj33JCNGzJC4uGRmHNiL6akXw&s?w=400&h=300&fit=crop" alt="Apple Watch Ultra 2">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Apple Watch Ultra 2</h3>
+                        <p class="product-description">Rugged smartwatch for extreme activities</p>
+                        <p class="product-price">$799.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item glass-effect neumorphic transform-3d" data-category="accessories">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXO-DWw9LXRg8x-0Qoyzl-9W89Z811FMxfmw&s?w=400&h=300&fit=crop" alt="MagSafe Charger">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn magnetic-btn">Quick View</button>
+                            <button class="add-to-cart-btn magnetic-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>MagSafe Charger</h3>
+                        <p class="product-description">Wireless charger with magnetic alignment</p>
+                        <p class="product-price">$39.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechGadget</h3>
+                    <p>Premium tech gadgets for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechGadget Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

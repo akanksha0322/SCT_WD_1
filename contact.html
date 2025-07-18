@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechGadget Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dynamic Particle Background -->
+    <div class="particle-container" id="particles"></div>
+
+    <!-- Live Scenery Background -->
+    <div class="scenery-background">
+        <div class="animated-bg layer1"></div>
+        <div class="animated-bg layer2"></div>
+        <div class="animated-bg layer3"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="float-element float-1"></div>
+        <div class="float-element float-2"></div>
+        <div class="float-element float-3"></div>
+        <div class="float-element float-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechGadget</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title text-reveal">
+                    <span class="text-reveal">Get in</span>
+                    <span class="text-reveal">Touch</span>
+                </h1>
+                <p class="hero-subtitle text-reveal">
+                    We're here to help you find the perfect tech solutions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card glass-effect neumorphic transform-3d">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Call Us</h3>
+                        <p>+91 9780898900</p>
+                        <p>Mon-Fri: 9AM-6PM</p>
+                    </div>
+                </div>
+                <div class="contact-card glass-effect neumorphic transform-3d">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email Us</h3>
+                        <p>support@techgadget.com</p>
+                        <p>We'll respond within 24 hours</p>
+                    </div>
+                </div>
+                <div class="contact-card glass-effect neumorphic transform-3d">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Visit Us</h3>
+                        <p>123 New Yelhanka Twon</p>
+                        <p>Bengaluru, India</p>
+                    </div>
+                </div>
+                <div class="contact-card glass-effect neumorphic transform-3d">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7</p>
+                        <button class="chat-btn magnetic-btn">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-content">
+                    <h2 class="section-title text-reveal">Send us a Message</h2>
+                    <p class="text-reveal">Have a question or need assistance? We'd love to hear from you.</p>
+                    
+                    <form class="contact-form glass-effect neumorphic" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required class="form-input glass-effect">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required class="form-input glass-effect">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input glass-effect">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required class="form-select glass-effect">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="product">Product Information</option>
+                                <option value="order">Order Status</option>
+                                <option value="return">Returns & Refunds</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="form-textarea glass-effect" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn magnetic-btn neumorphic">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="form-visual">
+                    <div class="visual-card glass-effect neumorphic transform-3d">
+                        <div class="visual-content">
+                            <h3>Quick Response</h3>
+                            <p>We typically respond to all inquiries within 24 hours during business days.</p>
+                            
+                            <div class="response-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">< 24h</div>
+                                    <div class="stat-label">Response Time</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">99%</div>
+                                    <div class="stat-label">Customer Satisfaction</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support Available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-reveal">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for all unopened items in original packaging. Items must be in new condition with all accessories and documentation included.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>How fast is your shipping?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer free standard shipping (5-7 business days) and express shipping (1-2 business days) options. Orders placed before 2 PM EST ship the same day.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>Do you offer warranty on products?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all products come with manufacturer warranty. We also offer extended warranty options for additional protection and peace of mind.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>Are your products authentic?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We only sell 100% authentic products sourced directly from manufacturers and authorized distributors. All products come with original packaging and documentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>Can I track my order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, once your order ships, you'll receive a tracking number via email. You can also check your order status anytime by logging into your account.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-effect neumorphic">
+                    <div class="faq-question">
+                        <h3>Do you offer technical support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our technical support team is available 24/7 to help with product setup, troubleshooting, and any technical questions you may have.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title text-reveal">Find Us</h2>
+            <div class="map-container glass-effect neumorphic">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>TechGadget Store</h3>
+                        <p>123 Tech Street<br>Silicon Valley, CA 94025</p>
+                        <div class="map-hours">
+                            <h4>Store Hours:</h4>
+                            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                            <p>Saturday: 10:00 AM - 6:00 PM</p>
+                            <p>Sunday: 12:00 PM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechGadget</h3>
+                    <p>Premium tech gadgets for the modern lifestyle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link magnetic-btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechGadget Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
